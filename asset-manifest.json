@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/wheres-waldo-frontend/static/css/main.356b7c20.css",
+    "main.js": "/wheres-waldo-frontend/static/js/main.66b1515c.js",
+    "static/media/great-escape.jpeg": "/wheres-waldo-frontend/static/media/great-escape.bf5ae0cf15f2a1dc0cb8.jpeg",
+    "static/media/siege-of-troy.jpeg": "/wheres-waldo-frontend/static/media/siege-of-troy.e4a5e1b91e086bafc7b9.jpeg",
+    "static/media/outer-space.jpeg": "/wheres-waldo-frontend/static/media/outer-space.4e93d59b8685836dd153.jpeg",
+    "static/media/fruit-fight.jpeg": "/wheres-waldo-frontend/static/media/fruit-fight.38b429be065e4e09908d.jpeg",
+    "static/media/ye-olde-dodgeball.jpeg": "/wheres-waldo-frontend/static/media/ye-olde-dodgeball.235c6c98c066cd2b96dc.jpeg",
+    "static/media/ski-slopes.jpeg": "/wheres-waldo-frontend/static/media/ski-slopes.4b3489eb2c602f96fea6.jpeg",
+    "static/media/wilma.jpg": "/wheres-waldo-frontend/static/media/wilma.1fb4448504bfa4a44512.jpg",
+    "static/media/waldo.jpg": "/wheres-waldo-frontend/static/media/waldo.2bae67c02fe0d668a5db.jpg",
+    "static/media/odlaw.jpg": "/wheres-waldo-frontend/static/media/odlaw.5dac57110872b21477f1.jpg",
+    "static/media/wizard.jpg": "/wheres-waldo-frontend/static/media/wizard.4f913fe22449d8f74d8a.jpg",
+    "static/media/logo.png": "/wheres-waldo-frontend/static/media/logo.2b12c84df9645c66098b.png",
+    "index.html": "/wheres-waldo-frontend/index.html",
+    "main.356b7c20.css.map": "/wheres-waldo-frontend/static/css/main.356b7c20.css.map",
+    "main.66b1515c.js.map": "/wheres-waldo-frontend/static/js/main.66b1515c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.356b7c20.css",
+    "static/js/main.66b1515c.js"
+  ]
+}
