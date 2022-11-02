@@ -1,0 +1,219 @@
+.Level {
+    padding: 2rem 10vw;
+  }
+  
+  .LevelCard {
+    padding: calc(0.5rem + 1vw);
+    display: grid;
+    justify-items: center;
+    gap: 1rem;
+  }
+  
+  .LevelHeader {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .LevelHeader > span {
+    font-size: calc(0.5rem + 0.8vw);
+    display: flex;
+    align-items: center;
+  }
+  
+  .LevelHeader > span > .Bubble {
+    font-size: calc(0.5rem + 0.5vw);
+  }
+  
+  .LevelHeader > h2 {
+    font-size: calc(1rem + 1vw);
+  }
+  
+  .LevelMain {
+    display: grid;
+    grid-template: 1fr / 5rem 1fr;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .Characters {
+    display: grid;
+    gap: 1rem;
+    grid-template: auto repeat(4, 1fr) / 1fr;
+  }
+  
+  .Characters > span {
+    border: 1px solid var(--black);
+    width: 100%;
+    aspect-ratio: 1;
+    display: flex;
+    position: relative;
+  }
+  
+  .Check {
+    color: var(--success);
+    opacity: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .Check > svg {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .Check.Found {
+    opacity: 0.8;
+  }
+  
+  .Characters > span > * {
+    width: 100%;
+  }
+  
+  .MapButton {
+    border: 1px solid var(--black);
+    display: flex;
+    position: relative;
+  }
+  
+  .Map {
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  .Circle {
+    position: absolute;
+    height: 40px;
+  }
+  
+  .Timer {
+    color: var(--black);
+    font-size: calc(0.5rem + 0.5vw);
+    border: 1px solid var(--black);
+    width: 100%;
+    text-align: center;
+    display: grid;
+    grid-template-rows: auto 1.5rem;
+    align-items: center;
+  }
+  
+  .Timer > p {
+    color: var(--white);
+    background: var(--red);
+    font-size: calc(0.5rem + 0.8vw);
+    width: 100%;
+  }
+  
+  .ScoreModalContainer {
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  
+  .ScoreModal {
+    background: var(--white);
+    border: 3px solid var(--black);
+    margin-top: 20vh;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .GameOverWaldo {
+    width: calc(5rem + 5vw);
+  }
+  
+  h4 {
+    font-size: calc(0.9rem + 0.4vw);
+  }
+  
+  .Time {
+    color: var(--red);
+  }
+  
+  .ScoreForm {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .ScoreForm > input {
+    font-size: 1rem;
+    padding: 0.2rem 0.3rem;
+    border: 2px solid var(--blue);
+  }
+  
+  .ScoreForm > button {
+    color: var(--white);
+    background: var(--blue);
+    font-size: 1rem;
+    padding: 0.2rem 0.5rem;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .Level {
+      padding: 2rem 3vw;
+    }
+  
+    .LevelMain {
+      grid-template: 1fr 5rem / 1fr;
+      align-items: start;
+    }
+  
+    .Characters {
+      grid-template: 1fr / 5rem repeat(4, 5rem);
+      justify-content: center;
+      grid-row: 2 / -1;
+    }
+  
+    .Timer {
+      font-size: calc(0.8rem + 0.5vw);
+      grid-template-rows: auto 1fr;
+      
+    }
+  
+    .Timer > p {
+      font-size: calc(0.5rem + 1vw);
+      padding: 0.2rem 0;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .LevelCard {
+      gap: 0.5rem;
+    }
+  
+    .LevelMain {
+      grid-template: 1fr 4rem / 1fr;
+      gap: 0.5rem;
+    }
+  
+    .Characters {
+      grid-template: 1fr / repeat(5, 4rem);
+      gap: 0.5rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .LevelHeader > span {
+      flex-direction: column;
+    }
+  
+    .LevelHeader > h2 {
+      font-size: calc(1rem);
+    }
+  
+    .Characters {
+      grid-template: 1fr / repeat(5, 3.5rem);
+    }
+  }

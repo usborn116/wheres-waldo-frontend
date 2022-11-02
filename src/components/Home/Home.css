@@ -1,0 +1,49 @@
+.TitleCard {
+    font-size: 1.6rem;
+    padding: 0.5rem 1rem;
+    align-self: center;
+  }
+  
+  .MapGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 2rem;
+  }
+  
+  .MapIcon {
+    padding: 1rem 1rem 0.5rem 1rem;
+    display: grid;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+  }
+  
+  .MapIcon:hover {
+    box-shadow: -2px 2px 0 rgba(0, 0, 0, 0.5);
+  }
+  
+  .MapIcon > img {
+    width: 100%;
+    border: 1px solid var(--black);
+  }
+  
+  .MapInfo {
+    display: flex;
+    align-items: space-between;
+    justify-content: space-between;
+  }
+  
+  .MapInfo > span {
+    display: flex;
+    align-items: center;
+  }
+  
+  h3 {
+    font-size: 1.4rem;
+    justify-self: center;
+  }
+  
+  @media screen and (max-width: 480px) {
+    .MapGrid {
+      grid-template-columns: repeat(auto-fit, minmax(100vw, 1fr));
+    }  
+  }

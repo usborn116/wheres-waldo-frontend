@@ -1,0 +1,32 @@
+.Loading {
+    height: calc(100vh - 5rem - 1px);
+    padding: 0;
+  }
+  
+  .Loading > span {
+    background: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .LoadingWaldo {
+    height: 50%;
+    width: auto;
+    animation: blink 0.8s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
